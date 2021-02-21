@@ -1,0 +1,246 @@
+@import url("https://fonts.googleapis.com/css2?family=Acme&family=Sansita+Swashed&display=swap");
+
+html,
+body,
+img,
+p,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+input,
+button {
+  margin: 0;
+  padding: 0;
+}
+ul,
+ol,
+li {
+  list-style: none;
+}
+html {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  width: 100%;
+  height: 100%;
+  font-family: "Acme", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+input,
+button {
+  font-family: "Acme", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans",
+    "Helvetica Neue", sans-serif;
+}
+.bgImage {
+  width: 100%;
+  height: 100%;
+}
+
+.container-wrap {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 20px 0 10px;
+  border-top: 4px solid #f06292;
+  -webkit-border-radius: 5px;
+  border-radius: 5px;
+  background: #3c424a;
+  z-index: 1;
+}
+.container-wrap > div {
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.container-wrap .title {
+  color: #fff;
+  text-align: center;
+  margin-bottom: 30px;
+}
+.clock-container {
+  text-align: center;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #343940;
+}
+.clock-container .date {
+  font-size: 24px;
+  color: #fff;
+}
+.clock-container .time {
+  font-size: 18px;
+  color: #7b818a;
+}
+
+.container-wrap input {
+  display: inline-block;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 5px 10px;
+  line-height: 20px;
+  background: #343a40;
+  border: 1px solid #2e3238;
+  -webkit-border-radius: 3px;
+  border-radius: 3px;
+  color:#fff;
+  font-size:16px;
+}
+.todo-container h2 {
+  color: #fff;
+}
+
+.user-container,
+.todo-container {
+  padding: 10px 0;
+  border-bottom: 1px solid #343940;
+}
+.user-container {font-size:18px; 
+color:#fff; text-align:center; }
+.user-form,
+.user-infobox {
+  display: none;
+}
+.show {
+  display: block;
+}
+.weather {
+  text-align: right;
+}
+.clear:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+
+.todo {
+  position: relative;
+  margin: 0px auto;
+  padding: 20px 0 30px;
+  text-align: center;
+}
+
+.todo .title {
+  position: relative;
+  padding: 8px 0;
+  color: #eb9f7e;
+  line-height: 1;
+  font-size: 32px;
+}
+.todo .title:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 0;
+  width: 300px;
+  height: 1px;
+  background-color: #bfc0c2;
+  content: "";
+}
+.todo .todo:after {
+  position: absolute;
+  left: 50%;
+  margin-left: -150px;
+  bottom: 30px;
+  width: 300px;
+  height: 1px;
+  background-color: #bfc0c2;
+  content: "";
+}
+
+.todo .box {
+  padding: 20px;
+}
+.todo .boxtitle {
+  margin-bottom: 10px;
+  color: #91684a;
+  font-size: 28px;
+  font-weight: 600;
+}
+.todo .inptxt {
+  width: 100%;
+  margin-bottom: 20px;
+  padding: 12px 15px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  color: #111;
+  box-sizing: border-box;
+  color:#fff
+}
+
+.todo .list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+  padding: 20px;
+}
+
+.todo .list li {
+  position: relative;
+  width: 100%;
+  padding: 8px 90px 4px 22px;
+  line-height: 1;
+  color: #91684a;
+  border-radius: 16px;
+  background-color: #ffc9b4;
+  box-sizing: border-box;
+}
+.todo .list li + li {
+  margin-top: 10px;
+}
+.todo .list li span {
+  position: relative;
+  display: block;
+  padding-left: 20px;
+  line-height: 1;
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  margin-bottom: 5px;
+  box-sizing: border-box;
+}
+.todo .list li span:before {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -9px;
+  width: 20px;
+  height: 20px;
+  font-size: 20px;
+  color: #fd976d;
+  content: "♥";
+}
+
+.todo .btngroup {
+  position: absolute;
+  width: 80px;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.todo .btn {
+  float: left;
+  display: block;
+  width: calc(50% - 3px);
+  box-sizing: border-box;
+  padding: 5px 8px;
+  background: #fd976d;
+  border-radius: 4px;
+  font-size: 12px;
+  color: #fff;
+  margin-left:0; 
+  border:none;
+}
+.todo .btn + .btn {
+  margin-left: 6px;
+}

@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Parcel Sandbox</title>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="src/styles.css">
+  </head>
+
+  <body>
+    <div id="wrap" class="container-wrap">
+      <h1 class="title">My To Do List</h1>
+      <!-- 시계 -->
+      <div class="clock-container">
+        <P class="date"></P>
+        <p class="time">00:00</p>
+      </div>
+
+      <!-- user 이름 -->
+      <div class="user-container">
+        <form class="user-form">
+          <input type="text" placeholder="이름을 입력해주세요." />
+        </form>
+        <p class="user-infobox"></p>
+      </div>
+
+
+
+      <!-- todolist -->
+      <div class="todo-container">
+        <div class="todo">
+          <h2 class="title">TODAY'S TO DO LIST</h2>
+          <div class="box">
+            <form class="toDoForm">
+              <input type="text" placeholder="Write to do list" class="inptxt" />
+            </form>
+            <h2 class="boxtitle">Proceeding</h2>
+            <ul class="list pending"></ul>
+            <h2 class="boxtitle">Complete</h2>
+            <ul class="list finished"></ul>
+          </div>
+        </div>
+      </div>
+      
+      <!-- weather -->
+      <div class="weather-container">
+        <p class="weather"></p>
+      </div>
+    </div>
+
+    
+    <script src="src/clock.js"></script>
+    <script src="src/user.js"></script>
+    <script src="src/todo.js"></script>
+    <script src="src/bg.js"></script>
+    <script src="src/weather.js"></script>
+    <script src="src/index.js"></script>
+  </body>
+</html>
+<!--
+Clock.
+Username Persistance.
+To Do List.
+Random Background Image.
+Weather with Geolocation.
+-->
